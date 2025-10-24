@@ -1,0 +1,9 @@
+---
+services:
+  nginx:
+    image: nginx:latest
+    restart: always
+    ports:
+      - "9999:80"
+    labels:
+      "com.helios.target": "http://localhost:9999"
